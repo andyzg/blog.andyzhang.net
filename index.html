@@ -22,13 +22,15 @@
     <ul class="posts">
       {% for post in site.posts %}
         <li class="entry">
-          <a class="post-title" href="{{ post.url | prepend: site.baseurl }}">
-            {{ post.title }}
+          <a class="entry-link" href="{{ post.url | prepend: site.baseurl }}">
+            <div class="post-title">
+              {{ post.title }}
+            </div>
+            <div class="post-date">{{ post.date | date: "%b %-d, %Y" }}</div>
+            <div class="post-excerpt">
+              {{ post.content }}
+            </div>
           </a>
-          <div class="post-date">{{ post.date | date: "%b %-d, %Y" }}</div>
-          <div class="post-excerpt">
-            {{ post.content }}
-          </div>
         </li>
       {% endfor %}
     </ul>
