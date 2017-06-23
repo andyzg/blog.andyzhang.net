@@ -1,5 +1,9 @@
 ---
 ---
+html {
+  background-color: #fafafa;
+}
+
 .content {
   margin: 0 auto;
   width: 512px;
