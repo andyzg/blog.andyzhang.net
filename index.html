@@ -10,8 +10,9 @@ layout: main
         </div>
         <div class="post-date">{{ post.date | date: "%b %-d, %Y" }}</div>
         <div class="post-excerpt">
-          {{ post.content }}
+          {{ post.excerpt }}
         </div>
+        <div class="read-more"> Read more </div>
       </a>
     </li>
   {% endfor %}

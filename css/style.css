@@ -98,6 +98,13 @@ html {
   font-size: 18px;
 }
 
+.read-more {
+  color: #0095FF;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
 .footer {
   padding: 32px;
   font-style: italic;
