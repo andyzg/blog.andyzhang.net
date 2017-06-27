@@ -136,6 +136,7 @@ html {
 }
 
 .post-excerpt h1, .page-content h1 {
+  color: #000;
   font-size: 32px;
   font-family: 'Poppins', sans-serif;
 }
@@ -144,6 +145,20 @@ html {
   margin-top: 32px;
   margin-bottom: 0px;
 
+  color: #000;
   font-size: 24px;
   font-family: 'Poppins', sans-serif;
+}
+
+.post-excerpt h1, .page-content h1 {
+  color: #000;
+  font-size: 32px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.post-excerpt strong,
+.post-excerpt em,
+.page-content strong,
+.page-content em {
+  color: #000;
 }
