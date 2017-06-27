@@ -23,6 +23,21 @@ html {
   padding: 32px;
 }
 
+.subheader {
+  padding: 0 32px;
+
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.line {
+  background-color: #bbb;
+  width: 64px;
+  margin: 0 32px 16px 32px;
+  height: 1px;
+}
+
 .name {
   margin: 0;
 
@@ -83,6 +98,17 @@ html {
   font-size: 18px;
 }
 
+.footer {
+  padding: 32px;
+  font-style: italic;
+}
+
+.archive-link {
+  color: #999;
+  text-decoration: none;
+}
+
+
 .page-title {
   margin: 0;
 
@@ -102,4 +128,22 @@ html {
 
   font-family: 'Crimson Text', serif;
   font-size: 18px;
+}
+
+.page-content img {
+  margin: 0 auto;
+  display: block;
+}
+
+.post-excerpt h1, .page-content h1 {
+  font-size: 32px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.post-excerpt h2, .page-content h2 {
+  margin-top: 32px;
+  margin-bottom: 0px;
+
+  font-size: 24px;
+  font-family: 'Poppins', sans-serif;
 }

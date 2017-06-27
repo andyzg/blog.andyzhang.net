@@ -1,0 +1,39 @@
+---
+layout: post
+title: Project Euler Problem 3 - Largest Prime Factor
+date: 2014-03-14 21:44:28.000000000 -04:00
+categories:
+- Programming
+tags:
+- programming
+- project euler
+status: publish
+type: post
+published: true
+meta:
+  _edit_last: '1'
+  _syntaxhighlighter_encoded: '1'
+author:
+  login: andyzg
+  email: me@andyzg.com
+  display_name: andyzg
+  first_name: ''
+  last_name: ''
+---
+<p>"The prime factors of 13195 are 5, 7, 13 and 29.</p>
+<p>What is the largest prime factor of the number 600851475143 ?"</p>
+<p>I had a lot of fun going through this one because I realized the problems slowly got harder and harder. To start, here's my solution:</p>
+<p>[code language="python"]</p>
+<p>print(filter(lambda x:not sum([x%i==0 for i in range(2,x)]),filter(lambda x:x!=0,[x if 600851475143%x == 0 else 0 for x in range(2, int( 600851475143**0.5))]))[-1])</p>
+<p>[/code]</p>
+<p>I start off by making a list of all the factors between 2 and the square root of 600851475143. This gives me a list of a LOT of zeros and a couple of factors which I then filter out based on whether they're equal to 0 or not.</p>
+<p>[code language="python"]</p>
+<p>filter(lambda x:x!=0,[x if 600851475143%x == 0 else 0 for x in range(2, int( 600851475143**0.5))])</p>
+<p>[/code]</p>
+<p>After this, I needed to find the largest prime factor. Since not all of them were prime, I needed to find a way to figure them out. I opted for the simple way where I iterated through the numbers 2 to x-1 and checked whether or not they were divisible or not.</p>
+<p>In the case where the number was prime, all values would have returned false, meaning the sum would give 0 since false = 0. However, if there was a factor, this would mean that there would've existed at least 1 element that was 1 inside the list. By summing the list, I could see whether or not a factor existed or not and I simply complemented the value in order to obtain the boolean determining whether the number was prime or not.</p>
+<p>Since this list was already sorted, I would just print out the last element of the list by appending [-1] to the end:</p>
+<p>[code language="python"]</p>
+<p>filter(lambda x:not sum([x%i==0 for i in range(2,x)]), [factors])[-1]</p>
+<p>[/code]</p>
+<p>And that's it! Thanks for reading my solution and I hope you liked it. Feel free to drop a comment :)</p>

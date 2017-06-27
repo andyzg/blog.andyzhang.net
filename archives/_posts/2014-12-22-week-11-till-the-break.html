@@ -1,0 +1,87 @@
+---
+layout: post
+title: Week 11 till the break
+date: 2014-12-22 00:13:35.000000000 -05:00
+categories: []
+tags: []
+status: publish
+type: post
+published: true
+meta:
+  _edit_last: '1'
+author:
+  login: andyzg
+  email: me@andyzg.com
+  display_name: andyzg
+  first_name: ''
+  last_name: ''
+---
+<p>After the Facebook Hackathon, most of my free time was dedicated to catching up with school. I spent most of my time previously so it only made sense I was behind in almost everyone one of my courses in terms of content.</p>
+<p>Jk, I had better things to do. I spent most of my time on the compiler competition. I started a bit late due to the Facebook Hackathon and some homework catch up but I made sure that I was still on time for each of my assignments.</p>
+<p>My implementation for the compiler was the one shown in class i.e. the inefficient one using the stack. Here's a list of all of my optimizations after the competition ended:</p>
+<p>Removing unused functions: 360 bytes<br />
+This consisted of keeping track of every function calls.<br />
+After, when printing all of the functions, I could not print those functions<br />
+out</p>
+<p>Applying Constant Folding: 2640 bytes<br />
+I applied constant folding on any obvious constants. This meant squashing a<br />
+1 + 1 + 1 + 1 + 1 to 5</p>
+<p>Evaluating test conditions during compile time: 996 bytes<br />
+Using the constants found in the above optimization, I check whether<br />
+I can evaluate the condition during compile time</p>
+<p>Pushing 31 and popping 31 only at the beginnign and end of a function: 4816 bytes<br />
+Before calling a function and after calling a function, instead of popping<br />
+and pushing after and before, I do it at the beginning and end of a procedure</p>
+<p>Removing all unused declarations and statements: 7016 bytes<br />
+If I have a return expr and a bunch of statements that dont do anything, i<br />
+just ignore them and dont print all of those statements</p>
+<p>Constant propagation: 159992 bytes<br />
+After building on top of constant folding, I maanged to get 15992 byte<br />
+reduction. Constant propagation meant that if I set a = 3;, then when I later<br />
+use b = a + 3, I can turn it into b = 6</p>
+<p>Minor one liner during function calls: 176 bytes<br />
+There was a redundancy and I had to remove it</p>
+<p>Removing 1 line in the test: 384 bytes<br />
+There was a redundant line. Apparently, theres 96 if/while statements</p>
+<p>Removing some useless stuff: 508 bytes<br />
+Cool, more useless stuff that I removed from the procedure callings</p>
+<p>Using the constants in registers: 832 bytes<br />
+If I am calling lis word and its constant is a combination of the constants,<br />
+then use this</p>
+<p>Applying the above everywhere: 1140 bytes<br />
+Instead of only variables, I apply it everywhere</p>
+<p>Applying the above for negative numbers: 1640 bytes<br />
+So I forgot to apply the above for negative numbers. Turns out it helps a lot</p>
+<p>If the function returns something contant, dont call the function: 1132 bytes<br />
+Some functions dont need to be called. Their value can be evaluated at<br />
+runtime. Why call the function then?</p>
+<p>If lvalue is an id, store directly: 23,603 bytes<br />
+This was one of the best optimizations in terms of amount saved vs amount of<br />
+code written.</p>
+<p>Apply above even if I dont have ID above. 192 bytes</p>
+<p>Removing push/pop for PRINTLN: 3952</p>
+<p>Final result: 115196 bytes</p>
+<p>Not too bad. I was slightly bitter about this final result because I was hoping to get register allocation working. Although most of the functionality was there, it had a lot of trouble handling pointers to variables whose contents are held in a register. I was projecting approximately 80k with a working register allocation.</p>
+<p>Enough of that, what else was up? A lot of studying when the competition ended. Catching up on all that content while watching a movie every night lulz. Some of my favourite movies were Maze Runner and Divergent. They were really interesting and made me more interested in post apocalyptic dystopian action thrillers.</p>
+<p>Here are the courses I took and what I thought of them overall</p>
+<p>CS 241 - Baby compilers course. An amazing teacher combined with an amazing course results in an amazing learning experience. I learned a ton, seeing how a compiler worked at a high level. I also got to build my own with a lot of tools provided(I ain't writing a real compiler, hell no). We learned MIPS programming and it was a great introduction to assembly language</p>
+<p>ECE 222 - Computer Architecture. I really enjoyed this course as well. I feel like there's a bit more memorization to it compared to the other courses but it was well worth it because as the title says, you learn about computer architecture and for a software engineering student like me, that's candy.</p>
+<p>SE 212 - Logics. It's a hard course, take it seriously, and do your assignments early on. Those are the 3 things I didn't do and it hit me hard. It's alright though, I ended up doing decent and learned a lot from the course such as program correctness, Z specs and predicate logic. Natural Deduction, Semantic Tableau and Transformational Proofs were pretty cool as well :)</p>
+<p>CHE 102 - Chemistry. It's high school chem.</p>
+<p>STAT 206 - Statistics. It was a really interesting course, just too much content crammed so we ended up doing more number crunching than actual understanding. It was a real shame, I really wanted to understand more about statistics :(</p>
+<p>ECON 102 - Intro to Macro economics. Interesting course, learned about the economy etc.</p>
+<p>&nbsp;</p>
+<p>Looking back on my term, I think this is my most accomplished one yet. I'd like to list them out for personal purposes, to be proud of them when I get older:</p>
+<ul>
+<li>Participated in Engineering Orientation as a leader</li>
+<li>Helped organize the Resume Critiques(or volunteered. I won't lie, didn't put too much effort into this one)</li>
+<li>Organized EngHack. A lot of effort went into this, and getting all of the sponsors and organizing meetings as well as some budgeting</li>
+<li>Organized WEC Programming Competition. Creating the problem and all of the test cases took a lot of time and programming. It was well worth it, a ton of fun :)</li>
+<li>My first onsite interview at Quora - amazing experience, I had the chance to see what it's like doing 4 interviews in a row. Unfortunately I didn't get the job. I'll try again next time :)</li>
+<li>Web Summit Tech Conference. A ton of fun, had the chance to connect with some of the most amazing people ever and learn from them. Plenty of fun at the night, living the real Irish pub experience. I also had the chance to tour London :)</li>
+<li>Facebook Hackathon. Built an awesome coop coding game for people to learn how to code together (in JavaScript)</li>
+<li>Hack The North: Built Kanye, a stateful virtual assistant through text. It was really cool :)</li>
+<li>Compiler Competition. 3rd place isn't so bad considering I was short on time :P tons of fun!</li>
+<li>10 hours of sleep every night, because that's how I stay sane.</li>
+</ul>
+<p>It's been a great term 2A. Time 2B a 2B. :) before that, let's go work at Google in Montreal. Peace out!!!</p>
