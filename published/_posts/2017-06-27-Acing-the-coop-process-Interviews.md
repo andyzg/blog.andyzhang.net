@@ -15,8 +15,6 @@ If you get an interview for a company, it means that the company’s recruiter s
 - Are you able to communicate your thought process?
 - Most importantly, would I want to work with you?
 
-Almost all interviewees overlook is the fact that interviewers are also put in a stressful situation. They’re required to make a subjective decision that can affect someone’s future career. There are studies that show that stress is contagious. No one likes to be stressed, so a secondary goal would be to not feel stressed.
-
 Now that you have an understanding of what interviewers are looking for, let’s talk about how you can mentally prepare yourself to match these requirements.
 
 ## Mentally preparing yourself
