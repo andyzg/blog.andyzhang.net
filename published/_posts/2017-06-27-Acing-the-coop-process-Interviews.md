@@ -13,16 +13,16 @@ If you get an interview for a company, it means that the company’s recruiter s
 
 - Are you technically competent?
 - Are you able to communicate your thought process?
-- Most importantly, would I want to work with you?
+- Most importantly, would they want to work with you?
 
 Now that you have an understanding of what interviewers are looking for, let’s talk about how you can mentally prepare yourself to match these requirements.
 
 ## Mentally preparing yourself
-The minutes leading up to the interview are nerve wracking. We’ve all been there. We start tapping our fingers, we start imagining all of the worst case scenarios, we start rehearsing all of the technical content we just learned, and we try to distract ourselves without much success.
+The minutes leading up to the interview are nerve wracking. We’ve all been there. We start tapping our fingers, we start imagining all of the worst case scenarios, we start rehearsing all of the technical content we know, and we try to distract ourselves without much success.
 
-Interviews. A situation where your career can be affected for better or for worst. A situation that can determine how you spend four months of your life. It’s scary. Seriously, that is terrifying and stressful.
+Interviews. A situation where your career can be affected for better or for worst. A situation that can determine how you spend four months of your life. It’s scary. It's terrifying and stressful.
 
-Let’s forget all of that for a second (it’s hard, I know). Try reframing the situation. You’re about to meet someone from this amazing company, and you want to become friends with them. Meet them like as if you were meeting a new friend.
+Let’s forget all of that for a second (it’s hard, I know). Try reframing the situation. You’re about to meet someone from this great company, and you want to become friends with them. Meet them like as if you were meeting a new friend.
 
 “Hey, I’m Andy. What’s your name? Nice to meet you!”
 
@@ -31,7 +31,7 @@ You’ve probably done this hundreds of times all of your life. Introductions ar
 The situation shouldn’t feel stressful anymore. You’re meeting someone new, you’re getting to know them, and they are getting to know you as well. Hopefully, if the introduction went well, they already like you!
 
 ## Problem solving
-At this point, they’re getting to dive into a problem to test your technical competencies. One mistake interviewees do is that they try to prove to the interviewer that they’re able to solve the problem. Although this approach works, you’re only focusing on a part of the big picture.
+At this point, they’re getting to dive into a problem to test your technical competencies. One approach interviewees do is that they try to prove to the interviewer that they’re able to solve the problem. Although this approach works, you’re only focusing on a part of the big picture.
 
 Instead, reframe this as a team meeting. You’re working at a company, and both you and your coworker need to solve this problem together. As the lead, you’re responsible for driving the process of solving the problem, but you also want to make sure your coworker is on the same page as well.
 
@@ -47,7 +47,7 @@ When you’re not trying to ask questions or engage the interviewer, you should 
 I’ve shared some of the ways I think about my thought process when I solve programming problems. These aren’t the only ways to talk through a thought process. Always keep in mind that the goal of talking through your thought process is to ensure that the interviewer is on the same page as you.
 
 ## Ending the interview
-Near the end of the interview, the interviewer will cut you off to leave some time for questions. If you didn’t finish your solution, that’s fine. What’s important is that you showed to your interviewer that given more time, you would have been able to finish the solution. It’s not about the result, it’s about the process.
+Near the end of the interview, the interviewer will transition out of the problem solving part into time for questions. If you didn’t finish your solution, that’s fine. What’s important is that you showed to your interviewer that given more time, you would have been able to finish the solution. It’s not about the result, it’s about the process.
 
 When the interviewer asks if you have any questions, now’s the time to ask about things you’re genuinely curious about. Try to avoid asking questions that are very broad where everyone at that company can answer. Instead, ask them specific questions that very few engineers can answer. This can be done by researching your interviewers and learning more about what they’ve done at the company. For example, what is it like to work on X team in the company? Did you ever mentor an intern? If so, what did they work on?
 
