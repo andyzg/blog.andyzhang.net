@@ -23,6 +23,12 @@ html {
   padding: 32px;
 }
 
+.back {
+  position: fixed;
+  top: 24px;
+  left: 24px;
+}
+
 .subheader {
   padding: 0 32px;
 
