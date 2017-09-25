@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Leading Canada's Biggest Hackathon's Design Team"
+title:  "Leading Hack the North's Design Team"
 date:   2017-09-24 12:00:00
 extra_css:
 categories: []
