@@ -155,23 +155,19 @@ html {
 }
 
 .post-excerpt h1, .page-content h1 {
+  margin-bottom: 0px;
+
   color: #000;
   font-size: 32px;
   font-family: 'Poppins', sans-serif;
 }
 
 .post-excerpt h2, .page-content h2 {
-  margin-top: 32px;
+  margin-top: 8px;
   margin-bottom: 0px;
 
   color: #000;
   font-size: 24px;
-  font-family: 'Poppins', sans-serif;
-}
-
-.post-excerpt h1, .page-content h1 {
-  color: #000;
-  font-size: 32px;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -180,4 +176,8 @@ html {
 .page-content strong,
 .page-content em {
   color: #000;
+}
+
+p {
+  margin-bottom: 36px;
 }
