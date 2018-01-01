@@ -1,13 +1,11 @@
 ---
 layout: post
 title:  "2017 in review"
-date:   2017-01-1 12:00:00
+date:   2018-01-1 12:00:00
 extra_css:
 categories: []
 published: true
 ---
-
-# Thank you 2017
 
 What a wonderful year it has been. At the end of every year, I keep telling
 myself, "Wow, this was the best year yet!" Well, I can confidently say that this
