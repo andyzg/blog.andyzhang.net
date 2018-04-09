@@ -4,7 +4,7 @@ title:  "Leading Hack the North's Design Team"
 date:   2017-09-24 12:00:00
 extra_css:
 categories: []
-published: false
+published: true
 ---
 
 Hack the North is Canada's biggest hackathon. It was started in 2014 by a small
