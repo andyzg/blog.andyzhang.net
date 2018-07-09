@@ -87,10 +87,6 @@ html {
   text-decoration: none;
 }
 
-.post-title:hover {
-  text-decoration: underline;
-}
-
 .post-date {
   color: #999;
   font-family: 'Poppins', sans-serif;
