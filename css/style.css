@@ -145,6 +145,16 @@ html {
   width: 100%;
 }
 
+.page-content a {
+  color: #666;
+  text-decoration: underline;
+  transition: 0.1s color;
+}
+
+.page-content a:hover {
+  color: #09f;
+}
+
 .page-content hr {
   margin: 48px 0;
   border: 1px solid #ddd;
