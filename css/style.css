@@ -142,6 +142,7 @@ html {
 .page-content img {
   margin: 0 auto;
   display: block;
+  width: 100%;
 }
 
 .page-content hr {
