@@ -7,17 +7,17 @@ categories: []
 published: true
 ---
 
-## Overview
-After seeing the Systems Design Engineering 2017 Class Profile, I was deeply inspired to create a class profile for my class. I owe a lot to my class and my program, and felt incredibly lucky to be a part of it. I’m originally from Montreal, so coming to University of Waterloo originally never occurred as an option. Prior to university, I barely even knew what software engineering was, let alone code. If it weren’t for a friend of mine that convinced me to come to University of Waterloo, I wouldn’t be where I am today.
+## Why make a class profile?
+After seeing the Systems Design Engineering 2017 Class Profile, I was deeply inspired to create a class profile for my class. I owe a lot to my class and my program, and felt incredibly lucky to be a part of it. Prior to university, I knew very little about software engineering, so studying it at the University of Waterloo never occurred as an option. If it weren’t for a friend of mine that convinced me to come to University of Waterloo, I wouldn’t be where I am today.
 
-I wanted to create a class profile capturing what I wished I knew before university. I wish I knew what software engineering was like, what opportunities were available, how much debt I’d graduate with, if it’s too late for me to start coding, etc. There’s a lot of focus by the media on what software engineers in the industry are like, but the path connecting their beginnings to employment is still blurred.
+I wanted to create a class profile capturing what I wished I knew before university. I wish I knew what software engineering was like, what opportunities were available, how much debt I’d graduate with, if it’s too late for me to start coding, etc. There’s a lot of focus from the media on what software engineers in the industry are like, but the path connecting their beginnings to employment is still arcane.
 
 The goal of our class profile is to share the life of software engineering students, covering topics such as co-op, academics, lifestyle, and much more, and to increase the transparency of the transition from a high school student to a full-time software engineer.
 
 You can check out the final result [here](https://classprofile.andyzhang.net).
 
 ## Researching the topics
-I gathered what people wanted to know about Software Engineering students through a survey. The goal of the survey is to gather questions from the target audience. In this project, the target audience is composed of students who are either interested or new to software engineering.
+I gathered what people wanted to know about Software Engineering students through a survey. The goal of the survey is to gather questions from the target audience. In this project, the target audience is composed of students who are either interested in or new to software engineering.
 
 I created a Google Form to collect questions current SE students wanted to learn more about, or wish they knew during high school. SE students were asked because they were students who were once interested in SE and are possibly still new to SE (depending on the year). In total, I collected 152 questions from 40 survey responses across 5 class of SE students.
 
@@ -29,7 +29,7 @@ I went through all of the questions and collapsed any questions that were redund
 Afterwards, I removed questions that were too specific or could not be included in the survey (dating life, sex, etc.). The latter questions were separated into a second anonymous class survey and is not associated with this class profile.
 
 ## Designing the survey
-The main challenge with surveying our class was to get a high response rate. My goal was to get an 80% response rate, so I made several compromises to the survey:
+One of the main challenges was trying to get a high response rate. Since the survey involved sharing personal data, students were more likely to be reluctant to respond. My goal was to get an 80% response rate, so I made several compromises to the survey:
 
 - It should take 15 minutes to respond, meaning we had to cut questions.
 - Its responses should not be seen by any students including myself. The technicalities are discussed in the section below.
@@ -48,7 +48,7 @@ The survey closed with a 79.6% response rate.
 ## Working with anonymous data
 Processing the data became fairly tricky because the survey data was on Patrick Lam’s computer. This was an important constraint because many students expressed concerns on their personal data and didn’t want it to be seen by any students including myself. As a result, Christopher Luc and I came up with a system to process the data anonymously.
 
-Before programmatically processing the data, the data needed to be formatted consistently. For example, company names needed to be standardized (ex: Snap, Snapchat, Snap Inc becomes Snap).
+Before programmatically processing the data, the data needed to be formatted consistently. For example, company names needed to be normalized (ex: Snap, Snapchat, Snap Inc becomes Snap).
 
 To view a column without being able to infer which row it belonged to, the system shuffles each column independently from each other. Once each column is shuffled, it creates a local file storing the shuffled column as well as the original row indices. These indexes are a key piece to rebuilding the original data.
 
@@ -58,7 +58,7 @@ To view a column without being able to infer which row it belonged to, the syste
 
 Patrick only sent me the shuffled columns and held on to the original indices. I manually normalized the data, fixed any typos and ensured that answers were properly formatted so that they could be processed programmatically.
 
-Once I finished normalizing the whole dataset, I sent back the shuffled columns so that Patrick could stitch each modified shuffled columns into a new dataset.
+Once I finished normalizing the whole dataset, I sent back the shuffled columns so that Patrick could stitch each normalized shuffled columns into a new dataset.
 
 
 ![](https://d2mxuefqeaa7sj.cloudfront.net/s_C06BD5FE808963B501FC9DC320DB063FF82ADE2A7F2CC68E30CA7CFA6F42ED55_1531151148330_Group+2.png)
@@ -106,13 +106,6 @@ I ran the one way ANOVA on data sets involving groups of distributions. For exam
 I evaluated the one way ANOVA p-value from the groups to determine if there was a significant difference. If the p-value was lower than 0.05, it means that there is a significant difference between the groups. In statistical terms, it meant that there was a dependent variable who’s value can be affected by the independent variable. In most cases, grades and salary were the dependent variables.
 
 
-## Writing the content
-
-By this point, I had all of the findings I needed to start writing the content accompanying the findings. I worked on prioritizing all of the findings based on the story I wanted to share with prospective and current students.
-
-I split the content based on the types of audiences: those who want to skim the profile, and those who want to read more in-depth. Similar to the SYDE 2017 class profile, for each section, I focused on a one-liner, answering “If there was one takeaway from this section, what would it be?” Below the one-liner, I focused on elaborating on the findings, providing extra explanations if needed.
-
-
 ## Designing the page
 
 As I wrote the report, I borrowed a lot of inspiration from other reports such as SYDE 2017 class profile, HackerRank’s Developer Skills Report, and more. The report needed to be representative of what brought our class together, and that was software engineering.
@@ -148,6 +141,10 @@ Since prospective students were the target audience, I also worked with the Soft
 This was one of the most challenging but exciting projects I’ve worked on. Nothing excites me more than seeing so many different pieces come together into one final result. There’s still so much I would want to include in this post, but I didn’t want to make this as long as the class profile itself. The process involved a wide range of responsibilities such as research, talking to stakeholders, engineering, design, data science, etc., all of which are responsibilities that I deeply enjoyed.
 
 There was something new to learn in each part of the process. For example, learning how to make isometric illustrations, familiarizing myself with Jupyter notebook, studying ANOVA on Wikipedia, and much more. Applying these learnings was just as fulfilling as learning them, making the process enjoyable from start to finish.
+
+Thank you Christopher Luc for reviewing the draft of this post. Chris was
+integral in designing many parts of the process and pointing me in the right
+direction for statistical tests. Learn more about what he's up to on his [Medium](https://medium.com/@chrisjluc)!
 
 If you’re interested in learning more about the process behind our class profile, I’d love to chat! You can reach out to me via email ([andzhng@gmail.com](mailto:andzhng@gmail.com?subject=Hello)) or give me a shout on [Twitter](https://twitter.com/andyzg3)!
 
